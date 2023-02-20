@@ -1,13 +1,89 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: rgb(90, 185, 196);
+  background: linear-gradient(
+    180deg,
+    rgba(90, 185, 196, 1) 1%,
+    rgba(188, 53, 53, 0.47429394120929624) 71%,
+    rgba(180, 17, 17, 0.11855164429052867) 90%
+  );
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  /* width: 100vw;
+  height: 100vh; */
+  display: flex;
+  justify-content: center;
+}
+
+#container,
+.form {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  margin-bottom: 50px;
+}
+
+.heading {
+  color: black;
+  text-shadow: 10px 10px 10px rgb(59, 58, 58);
+}
+
+label,
+input {
+  font-size: 20px;
+}
+
+input[type="text"] {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgb(197, 237, 241);
+}
+.numbertype {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgb(197, 237, 241);
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  padding: 10px 50px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 50px;
+  font-size: 20px;
+  background-color: rgb(176, 238, 244);
+}
+
+input[type="submit"]:hover {
+  border: 2px solid grey;
+  box-shadow: 0 0 2px 2px rgb(241, 248, 249);
+  background-color: rgb(75, 224, 235);
+}
+
+#display-form-data {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  border: 2px solid rgb(37, 39, 37);
+  width: 80vw;
+  height: fit-content;
+  background-color: rgb(147, 209, 215);
+}
+
+.display-data {
+  text-align: center;
+  width: 400px;
+  height: fit-content;
+  padding: 20px;
+  margin: 15px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: rgba(245, 121, 195, 0.812);
+  font-size: 20px;
 }
